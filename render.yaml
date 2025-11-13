@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: movie-manager-api
+    env: docker
+    plan: free
+    dockerfilePath: BE/Dockerfile
+    dockerContext: .
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false

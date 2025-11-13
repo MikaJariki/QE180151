@@ -1,0 +1,30 @@
+# Global ignores
+.DS_Store
+Thumbs.db
+
+# Node/Vite (FE)
+node_modules/
+dist/
+FE/.env.local
+FE/.env.*.local
+FE/package-lock.json
+
+# Build output
+**/bin/
+**/obj/
+*.log
+
+# IDE / tooling
+.idea/
+.vs/
+*.user
+*.suo
+*.swp
+*.tmp
+
+# Dotnet secrets
+appsettings.Development.json
+appsettings.Local.json
+
+# Misc
+*.pdb
